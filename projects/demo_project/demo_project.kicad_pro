@@ -428,7 +428,19 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "transistor",
+      "passive",
+      "connector",
+      "diode",
+      "ic",
+      "led",
+      "misc",
+      "mosfet",
+      "power",
+      "supply",
+      "crystal"
+    ]
   },
   "meta": {
     "filename": "demo_project.kicad_pro",
