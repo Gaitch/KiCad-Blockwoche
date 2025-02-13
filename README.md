@@ -170,7 +170,7 @@ Neue Komponenten müssen dann über ein Datenbank-Tool in die Datenbank geschrie
 
 #### BUS erstellen
 - **Dicke blaue Leitung** zeichnen.
-- **Label hinzufügen** und Bus-Elemente angeben (Example: `B0 - 13, CLK, IO`).
+- **Label hinzufügen** und Bus-Elemente angeben (Example: `B0 - 13, CLK, IO`). Label name B[0..15]
 - **Rechtsklick auf Bus → Unfold** wählen und dann die einzelnen Pins verbinden.
 - **Bus-Aliase** können in den **Blatteigenschaften** neben dem Speichersymbol hinzugefügt werden.
 
@@ -179,6 +179,7 @@ Neue Komponenten müssen dann über ein Datenbank-Tool in die Datenbank geschrie
 
 #### Capacity Bias Effect
 - **Kapazitive Effekte durch Layout beachten.**
+erklaeren was es macht.. hoehere spannung kleine kapazitaet
 
 #### Pin Helper
 - **Rechtsklick auf einen Pin → Pin Helper** wählen.
@@ -196,3 +197,61 @@ Neue Komponenten müssen dann über ein Datenbank-Tool in die Datenbank geschrie
 - **Fab-Layer** für Fertigungsinformationen.
 - **Silkscreen-Layer** für Beschriftungen auf der Platine.
 - **Margin-Layer** zur Definition von Platinenrändern.
+
+
+## Tag 4
+
+### Vias
+Bei Vias müssen einige Dinge beachtet werden, unter anderem:
+- **Lagenaufbau und Möglichkeiten** → Vorab den **Produzenten** wählen und abklären.
+- **Auswirkungen** → Kosten & Produktionszeit berücksichtigen.
+- **Minimale Lochdurchmesser** → Typisch **0.3 mm**.
+- **Restring** → Typisch **0.15 mm**.
+- **Keine Vias im Pad** → Lötzinn fließt weg, außer verschlossen (→ teuer!).
+
+---
+
+### Einstellungen
+**Pfad:** *File → Board-Setup*
+
+#### **Physical Stackup**
+- Anzahl **Layer** und deren **Eigenschaften/Konfiguration** festlegen.
+
+#### **Constraints**
+- Design-Regeln und **Mindestabstände** definieren.
+
+#### **Netzklassen**
+- **Gruppierung von Signalen** (z. B. **Power, GND, Signal**).
+
+#### **Custom Rules**
+- **Eigene Design-Regeln** für spezifische Anforderungen erstellen.
+
+---
+
+### PCB Designer
+
+#### **Bauteile importieren**
+- Fehlermeldungen beachten → zeigen **fehlende Footprints** oder andere **Komplikationen**.
+
+#### **Schritt 1: Board zeichnen**
+- **Edge Cuts** Layer für die **Platinenkontur** nutzen.
+
+#### **Schritt 2: Bauteile platzieren**
+- **Grob platzieren**, dann **Feinjustierung**.
+- **Zentrale Komponenten zentrieren** (z. B. Mikrocontroller).
+- **Ausrichtung beachten** → USB-Pins zum **USB-Stecker**.
+- **Abstände einhalten**:
+  - **Digitale und analoge Bereiche trennen**.
+  - **Kurze Verbindungen für empfindliche Signale**.
+  - **Kondensatoren möglichst nah an ICs platzieren**.
+
+---
+
+### **Tipps**
+- **Nur Footprints selektierbar machen**, um **versehentliches Verschieben** von Verbindungen zu vermeiden.
+
+---
+
+### **Frage**
+> Ist es möglich, nachträglich einen **Footprint** hinzuzufügen, sodass er automatisch mit bereits im **Schaltplan vorhandenen Bauteilen** synchronisiert wird?
+
