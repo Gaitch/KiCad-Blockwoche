@@ -598,15 +598,6 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
 			(symbol "capacitor/05.000.0015_1_1"
 				(rectangle
 					(start -1.27 -0.254)
@@ -865,15 +856,6 @@
 				)
 			)
 			(property "ki_keywords" "C capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1148,15 +1130,6 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
 			(symbol "capacitor/05.040.449.0_1_1"
 				(rectangle
 					(start -1.27 -0.254)
@@ -1423,15 +1396,6 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
 			(symbol "capacitor/05.080.481.0_1_1"
 				(rectangle
 					(start -1.27 -0.254)
@@ -1685,15 +1649,6 @@
 				)
 			)
 			(property "ki_keywords" "pin connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -2790,15 +2745,6 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
 			(symbol "connector/12.010.001_0_1"
 				(rectangle
 					(start -5.08 15.24)
@@ -3514,15 +3460,6 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
 			(symbol "crystal/27.010.001_0_1"
 				(rectangle
 					(start -3.556 -2.54)
@@ -3978,15 +3915,6 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
 			(symbol "ic/26.000.0017_0_1"
 				(rectangle
 					(start -5.08 5.08)
@@ -4267,15 +4195,6 @@
 				)
 			)
 			(property "ki_keywords" "regulator"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -4721,15 +4640,6 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
 			(symbol "inductor/_1_1"
 				(rectangle
 					(start -0.635 1.778)
@@ -4977,15 +4887,6 @@
 				)
 			)
 			(property "ki_keywords" "R resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -5249,15 +5150,6 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
 			(symbol "resistor/21.000.0020_1_1"
 				(rectangle
 					(start -0.762 1.778)
@@ -5505,15 +5397,6 @@
 				)
 			)
 			(property "ki_keywords" "R resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -5777,15 +5660,6 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
 			(symbol "resistor/21.040.433.0_1_1"
 				(rectangle
 					(start -0.762 1.778)
@@ -6033,15 +5907,6 @@
 				)
 			)
 			(property "ki_keywords" "R resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -6305,15 +6170,6 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
 			(symbol "resistor/21.040.481.0_1_1"
 				(rectangle
 					(start -0.762 1.778)
@@ -6558,15 +6414,6 @@
 				)
 			)
 			(property "ki_keywords" "switch"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -12366,6 +12213,28 @@
 		)
 		(uuid "2865eefa-e322-4aa9-af30-a621842e3a7b")
 	)
+	(label "USB_N"
+		(at 69.85 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2921f4e9-0abc-45af-afd7-2b40268e82a9")
+		(property "Netclass" "USB"
+			(at 69.85 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(label "B1"
 		(at 259.08 81.28 0)
 		(effects
@@ -12395,6 +12264,28 @@
 			(justify right bottom)
 		)
 		(uuid "35ee7480-7f98-4ee2-b159-8077676cf9ba")
+	)
+	(label "USB_P"
+		(at 69.85 100.33 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "39b17d9c-2316-4c55-888c-2908b42f0df7")
+		(property "Netclass" "USB"
+			(at 69.85 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(label "B5"
 		(at 259.08 91.44 0)

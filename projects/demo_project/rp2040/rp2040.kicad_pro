@@ -484,14 +484,43 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
       "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_assignments": {
+      "/USB_N": "USB",
+      "/USB_P": "USB"
+    },
+    "netclass_patterns": [
+      {
+        "netclass": "USB",
+        "pattern": "USB"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "VCC"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -559,11 +588,119 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Active",
+          "name": "Active",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Category",
+          "name": "Category",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Designator",
+          "name": "Designator",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Dist1",
+          "name": "Dist1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Dist1#",
+          "name": "Dist1#",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Dist2",
+          "name": "Dist2",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Dist2#",
+          "name": "Dist2#",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Dist3",
+          "name": "Dist3",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Dist3#",
+          "name": "Dist3#",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "FP",
+          "name": "FP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MFR",
+          "name": "MFR",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MFR#",
+          "name": "MFR#",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Modified",
+          "name": "Modified",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Rating",
+          "name": "Rating",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Remarks",
+          "name": "Remarks",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Version",
+          "name": "Version",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
