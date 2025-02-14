@@ -250,8 +250,94 @@ Bei Vias müssen einige Dinge beachtet werden, unter anderem:
 ### **Tipps**
 - **Nur Footprints selektierbar machen**, um **versehentliches Verschieben** von Verbindungen zu vermeiden.
 
+Einige Bauteile wie Spannungsregulatoren oder Oszillatoren geben gewisse Anordnungen der Bauteile vor. Diese gemaess Datenblatt anordnen und verbinden.
+
 ---
 
 ### **Frage**
 > Ist es möglich, nachträglich einen **Footprint** hinzuzufügen, sodass er automatisch mit bereits im **Schaltplan vorhandenen Bauteilen** synchronisiert wird?
 
+## Tag 5
+
+### **Flächen & Polygone (Filled Zones)**
+- **Bereich zeichnen**, um eine gefüllte Kupferfläche zu erstellen.
+- **Verbindung wählen** → Typischerweise **Speisung (VCC) oder Ground (GND)**.
+- **Mit `B` neu generieren**, um die Zone zu aktualisieren.
+
+#### **Eigenschaften der Zone anpassen**
+1. **Zone anklicken** und **Eigenschaften öffnen**.
+2. Unter **Pad Connection** den **Thermal Relief** Modus wählen.
+
+---
+
+### **Differentielles Layout für USB**
+#### **Schritt 1: Netzlabels im Schematic Setup verwalten**
+- **USB-Signale** in der **Netclass-Verwaltung** zuweisen.
+
+#### **Schritt 2: Differenzpaar im Layout erstellen**
+1. **`6` auf das Pad klicken**.
+2. Zwei **parallele Leitungen** sollten automatisch erstellt werden.
+
+---
+
+## **Bill of Material (BOM)**
+Die **Stückliste (Bill of Material, BOM)** enthält alle benötigten Bauteile für die Fertigung der Platine. Sie stellt sicher, dass alle Bauteile korrekt bestellt und bestückt werden.
+
+### **Typische Informationen in der BOM**
+- **Bauteilbezeichnung** (Designator, z. B. R1, C3, U5)
+- **Bauteilwert** (z. B. 10kΩ, 100nF)
+- **Footprint** (z. B. SMD0603, THT)
+- **Hersteller & Bestellnummer** (MFR, MPN)
+- **Distributor & Bestellnummer** (z. B. Mouser, Digikey, LCSC)
+- **Anzahl der Bauteile** für die Fertigung
+
+### **Export der BOM in KiCad**
+Die BOM kann über **File → Fabrication Outputs → BOM** exportiert werden.  
+Es gibt verschiedene **BOM-Plugins**, die z. B. eine CSV oder Excel-Datei generieren.
+
+---
+
+## **Gerber-Dateien**
+**Gerber-Dateien** sind das standardisierte Format für die Herstellung von Leiterplatten. Sie enthalten die **grafische Darstellung** der verschiedenen PCB-Layer, die von Herstellern genutzt werden.
+
+### **Typische Gerber-Dateien**
+- **Leiterbahnen & Kupferflächen** (z. B. `Top_Copper`, `Bottom_Copper`)
+- **Lötstopplack & Bestückungsdruck** (Solder Mask & Silkscreen)
+- **Platinenumrisse** (Edge Cuts)
+
+### **Gerber-Export in KiCad**
+1. **File → Fabrication Outputs → Gerber**
+2. **Alle relevanten Layer auswählen** (Top, Bottom, Silkscreen, Soldermask, etc.).
+3. **Gerber-Dateien exportieren und in einem Viewer kontrollieren**.
+
+---
+
+## **Bohrdaten (Drill Files)**
+Die **Bohrdaten** definieren alle Löcher, die auf der Platine gebohrt werden müssen. Sie sind besonders wichtig für bedrahtete Bauteile, Vias und Montagelöcher.
+
+### **Typische Inhalte der Bohrdaten**
+- **THT-Bohrungen** für bedrahtete Bauteile.
+- **Vias** für Lagenverbindungen zwischen PCB-Schichten.
+- **Montagelöcher** für Gehäuse oder Befestigungen.
+
+### **Bohrdaten-Export in KiCad**
+1. **File → Fabrication Outputs → Drill Files**
+2. **Bohrdurchmesser & -typen überprüfen**.
+3. **Bohrdateien zusammen mit den Gerber-Dateien an den Hersteller senden**.
+
+---
+
+## **Pick & Place Daten**
+Die **Pick & Place Datei** enthält die **Positionen der Bauteile** für die automatische Bestückung mit Maschinen. SMT-Bauteile werden anhand dieser Datei automatisch auf die Platine gesetzt.
+
+### **Typische Inhalte der Pick & Place Datei**
+- **X- & Y-Koordinaten** der Bauteile.
+- **Drehwinkel der Bauteile**.
+- **Footprint & Referenzdesignator** (z. B. `R1`, `C3`).
+
+### **Pick & Place-Export in KiCad**
+1. **File → Fabrication Outputs → Footprint Position File**
+2. **Format auswählen (CSV, TXT, etc.)**.
+3. **Datei an den Bestücker senden**.
+
+---
